@@ -5,7 +5,7 @@ Link to download glove.6B.50d is:  https://nlp.stanford.edu/data/glove.6B.zip an
 
 FirstLoad the folder(from github) containing dataset and ipynb file into jupyternotebook
 
-Run the cells in Jupyter notebook, which has the commands for installing necessary packages as well.
+Run the cells in Jupyter notebook,which has the commands for installing necessary packages as well.
 
 After running all cells at the end you see a local host port that can run streamlit app something like "http://localhost:8501"
 
@@ -13,4 +13,4 @@ Go to that link you see the streamlit app running, You can give tweets from the 
 
 Also provided the huggingface space where you can directly run the web app of Disaster detection in the link without running the code.
 
-Link to HuggingFace Space: 
+Link to HuggingFace Space: https://huggingface.co/spaces/suharsha08/Disaster_Tweets_Classification
