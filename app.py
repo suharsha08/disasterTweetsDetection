@@ -114,7 +114,11 @@ class BiLSTM(nn.Module):
         return hidden
 
 # Load the embedding weights matrix
-weights_matrix = torch.tensor(np.load('weights_matrix.npy'))
+weights_matrix_np = np.load('weights_matrix.npy')
+
+# 2. Convert to torch tensor manually
+weights_matrix = torch.tensor(weights_matrix_np, dtype=torch.float32)
+
 
 # Instantiate the model
 output_size = 1
@@ -140,7 +144,7 @@ def main():
             # Preprocess input
             clean_input = clean_text(user_input)
             seq = text_to_sequence(clean_input, word2idx)
-            input_tensor = torch.from_numpy(seq).unsqueeze(0).type(torch.LongTensor)
+            input_tensor = torch.tensor(seq, dtype=torch.long).unsqueeze(0)
 
             # Initialize hidden state
             h = net.init_hidden(1, train_on_gpu=False)
