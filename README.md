@@ -1,7 +1,7 @@
-# disasterTweetsDetection
+#How to run code
 First need to download "glove.6B.50d" online. Unable to push to Git as it is exceeding 100MB.
 
-Link to download glove.6B.50d is:  https://nlp.stanford.edu/data/glove.6B.zip and extract zip file and choose file  glove.6B.50d and add to the project folder where the ipynb file is.
+Link to download glove.6B.50d is:  https://nlp.stanford.edu/data/glove.6B.zip and extract zip file and choose file  "glove.6B.50d" and add to the project folder where the ipynb file is.
 
 FirstLoad the folder(from github) containing dataset and ipynb file into jupyternotebook
 
